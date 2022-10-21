@@ -5,31 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desenhos</title>
-    <!-- <script src="index.js"></script> -->
+    <link rel="shortcut icon" href="/img/arco-iris.png" type="image/x-icon">
+    <title>Apoia</title>
+    <script src="index.js" defer></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+        @font-face {
+            font-family: fonteVal;
+            src: url(./img/VAL.otf);
+        }
+    </style>
 
 </head>
 
 <body>
     <div class="container">
         <header class="header">
-            <h1 class="title">Desenhos</h1>
+            <div id="divh1">
+                <h1 class="title">Apoia</h1>
+                <h1 id="lgbt">LGBT</h1>
+            </div>
+            <img id="bandeira" src="./img/lgbt.gif" alt="lgbt">
         </header>
-        <main class="main">
+        <main class=" main">
             <form class="form">
-                <input class="input" type="text" /><button class="button"> Buscar </button>
+                <input class="input" id="buscar" type="text" />
+                <input type="submit" id="send" onclick="busca(arrayVazia, buscar.value, event)" value="buscar" />
 
             </form>
-            <div class="sectionContainer">
-                <section class="section">
+            <div class="sectionContainer" id="desenhos">
+                <!-- <section class="section">
                     <aside class="imagem">
                         <img src="./img/hora-de-aventura.png" alt="Hora de Aventura">
                     </aside>
 
-                    <ul class="list">
+                    <ul class="list" id="horaDeAventura">
                         <li class="items">
-                            <a class="linkwiki" href="https://pt.wikipedia.org/wiki/Adventure_Time">Hora de Aventura</a>
+                            <a class="linkwiki" href="https://pt.wikipedia.org/wiki/Adventure_Time" class="nome">Hora de
+                                Aventura</a>
 
                         </li>
                         <li class="items">
@@ -51,9 +64,10 @@
                     <aside class="imagem">
                         <img src="./img/sailor-moon.jpg" alt="Sailor Moon">
                     </aside>
-                    <ul class="list">
+                    <ul class="list" id="sailorMoon">
                         <li class="items">
-                            <a class="linkwiki" href="https://pt.wikipedia.org/wiki/Sailor_Moon">Sailor Moon</a>
+                            <a class="linkwiki" href="https://pt.wikipedia.org/wiki/Sailor_Moon" class="nome">Sailor
+                                Moon</a>
 
                         </li>
                         <li class="items">
@@ -75,10 +89,11 @@
                     <aside class="imagem">
                         <img src="./img/flapjack.webp" alt="Flapjack">
                     </aside>
-                    <ul class="list">
+                    <ul class="list" id="flapjack">
                         <li class="items">
                             <a class="linkwiki"
-                                href="https://pt.wikipedia.org/wiki/The_Marvelous_Misadventures_of_Flapjack">
+                                href="https://pt.wikipedia.org/wiki/The_Marvelous_Misadventures_of_Flapjack"
+                                class="nome">
                                 Flapjack</a>
 
 
@@ -99,14 +114,14 @@
                     </ul>
 
 
-                </section>
+                </section> -->
 
             </div>
 
 
         </main>
         <footer class="footer">
-            <p>Sal | <a href="https://github.com/dinosalro">GitHub</a> </p>
+            <p>Sal | <a href="https://github.com/dinosalro" target="_blank">GitHub </a> </p>
         </footer>
 
     </div>
