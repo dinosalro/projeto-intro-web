@@ -4,6 +4,7 @@
 let card = document.getElementsByClassName("section")
 let nome = document.getElementsByClassName("nome")
 let imagemBuscaFalhou = document.getElementById("buscaFalhou")
+const someBoneca = document.querySelector(".bonequinha")
 
 //Declarando os Itens
 
@@ -88,7 +89,20 @@ function addBonequinha() {
 }
 addBonequinha()
 
+//função para retornar ao inicio no header
+function retorna(array, event) {
+    event.preventDefault()
+    const someBoneca = document.querySelector(".bonequinha")
+    someBoneca.style.display = "none"
+    for (let i in array) {
+        if (card[i].style.display === "none") {
+            card[i].style.display = "block"
+            card[i].style.display = "flex"
+        }
 
+
+    }
+}
 
 // Verificiar Array e vê se o input está correto.
 
@@ -110,6 +124,7 @@ function VerificaBusca(array) {
     } else {
         someBoneca.style.display = "block"
         alert("Desenho não encontrado :(")
+
     }
 
 }

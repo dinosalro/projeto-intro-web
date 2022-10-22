@@ -7,11 +7,12 @@
 
 
 .container {
-    width: 100vw;
+    width: 100%;
     background-color: rgb(201, 239, 247);
 }
 
 a {
+    display: flex;
     text-decoration: none;
     color: rgb(185, 85, 158);
     font-weight: bold;
@@ -172,6 +173,12 @@ img {
     width: 100%;
 }
 
+#github {
+    height: 4vh;
+    width: 4.5vh;
+    align-items: center;
+}
+
 
 @media (max-width: 700px) {
     #bandeira {
@@ -272,7 +279,8 @@ input[type="submit"]:hover {
 }
 
 section:hover {
-    background-color: rgb(226, 161, 208);
+    background-image: url(./img/gradiente.gif);
+    background-size: 2500px;
 }
 
 .header:hover {
